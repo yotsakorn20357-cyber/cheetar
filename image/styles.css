@@ -1,0 +1,279 @@
+/* ========== ตั้งค่าพื้นฐาน ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFF8DC;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========== Header และ Navigation ========== */
+header {
+    background: linear-gradient(135deg, #F4A460 0%, #D2691E 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* ========== Hero Section ========== */
+.hero {
+    background: linear-gradient(
+        rgba(244, 164, 96, 0.8),
+        rgba(210, 105, 30, 0.8)
+    ),
+    url('images/lampang2.jpg') center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #FFD700;
+    color: #333;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background-color: #FFA500;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* ========== About Section ========== */
+.about {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.content-image {
+    flex: 1;
+}
+
+.content-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.content-image img:hover {
+    transform: scale(1.05);
+}
+
+/* ========== Attractions Section ========== */
+.attractions {
+    padding: 80px 0;
+}
+
+.attraction-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.attraction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.attraction-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.attraction-image {
+    flex: 1;
+}
+
+.attraction-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.attraction-content {
+    flex: 1;
+}
+
+.attraction-content h3 {
+    font-size: 28px;
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+.attraction-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* ========== Detail Page Styles ========== */
+.detail-hero {
+    background: linear-gradient(
+        rgba(244, 164, 96, 0.8),
+        rgba(210, 105, 30, 0.8)
+    ),
+    url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1600&h=400&fit=crop')
+    center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.detail-content {
+    padding: 80px 0;
+    background-color: white;
+}
+
+/* ========== Contact Form ========== */
+.contact-info,
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #F4A460 0%, #D2691E 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* ========== Footer ========== */
+footer {
+    background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+    color: white;
+    padding: 50px 0 20px;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .content-wrapper,
+    .attraction-item,
+    .attraction-item.reverse {
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
